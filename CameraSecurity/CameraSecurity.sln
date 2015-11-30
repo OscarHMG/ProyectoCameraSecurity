@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraSecurity", "CameraSecurity\CameraSecurity.csproj", "{82494A75-7A86-4C59-A19F-38D9312F0CC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "CameraSecurity\Project.csproj", "{82494A75-7A86-4C59-A19F-38D9312F0CC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
