@@ -20,7 +20,7 @@ struct Library_CameraSecurity_CameraSecurity_Program
     static const int FIELD__button = 6;
     static const int FIELD__usbClientDP = 7;
     static const int FIELD__actualPicture = 8;
-    static const int FIELD__pictures = 9;
+    static const int FIELD__nivelDeDeteccion = 9;
 
 
     //--//

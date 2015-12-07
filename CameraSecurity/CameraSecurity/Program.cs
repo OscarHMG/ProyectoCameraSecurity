@@ -1,5 +1,13 @@
 ﻿using System;
 using System.Collections;
+using System.ComponentModel;
+//using System.Data;
+//using System.Drawing;
+//using System.Linq;
+using System.Text;
+//using System.Threading.Tasks;
+//using System.Windows.Forms;
+//using System.Collections;
 using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation;
@@ -7,11 +15,12 @@ using Microsoft.SPOT.Presentation.Controls;
 using Microsoft.SPOT.Presentation.Media;
 using Microsoft.SPOT.Presentation.Shapes;
 using Microsoft.SPOT.Touch;
-
+//Librerias de Gadgeteer
 using Gadgeteer.Networking;
 using GT = Gadgeteer;
 using GTM = Gadgeteer.Modules;
 using Gadgeteer.Modules.GHIElectronics;
+
 
 namespace CameraSecurity
 {
@@ -20,12 +29,20 @@ namespace CameraSecurity
         public Bitmap actualPicture;
         public ArrayList pictures;
         private static int contador = 0;
+        
+        float nivelDeDeteccion;
+
         void ProgramStarted()
         {
+            //Incializa las variables de deteccion
+            //deteccion = new MotionDetector(new TwoFramesDifferenceDetector(), new MotionBorderHighlighting());
+            nivelDeDeteccion = 0;
+            //Lista de todos los dispositivos de entrada de video
+            
             camera.BitmapStreamed += camera_BitmapStreamed;
             button.ButtonPressed += button_ButtonPressed;
             camera.PictureCaptured += camera_PictureCaptured;
-            pictures = new ArrayList();
+            //pictures = new ArrayList();
             Debug.Print("Program Started");
         }
 
@@ -36,6 +53,7 @@ namespace CameraSecurity
 
         void button_ButtonPressed(Button sender, Button.ButtonState state)
         {
+            
             camera.StartStreaming();
         }
 
@@ -45,13 +63,13 @@ namespace CameraSecurity
             if (bitmap != null) {
                 pictures.Add(bitmap);
                 contador++;
-                Debug.Print("Cont: "+pictures.Capacity);
-                compareBitmaps(pictures);
+               Debug.Print("Cont: "+pictures.Capacity);
+                //compareBitmaps(pictures);
             }
   
         }
 
-        private void compareBitmaps(ArrayList pictures)
+        /*private void compareBitmaps(ArrayList pictures)
         {
             int i = 0;
            
@@ -64,7 +82,7 @@ namespace CameraSecurity
                     }
                 }
             }
-        }
+        }*/
 
         private static bool Equals(Bitmap bmp1, Bitmap bmp2)
         {
