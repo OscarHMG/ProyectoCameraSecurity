@@ -69,3 +69,7 @@ C:\Users\labproto2\Documents\Proyecto Diseño\MotionCamera\GadgeteerApp1\bin\Deb
 C:\Users\labproto2\Documents\Proyecto Diseño\MotionCamera\GadgeteerApp1\bin\Debug\GHI.Usb.dll
 C:\Users\labproto2\Documents\Proyecto Diseño\MotionCamera\GadgeteerApp1\bin\Debug\GHI.Hardware.xml
 C:\Users\labproto2\Documents\Proyecto Diseño\MotionCamera\GadgeteerApp1\bin\Debug\GHI.Usb.xml
+C:\Users\labproto2\Documents\Proyecto Diseño\MotionCamera\GadgeteerApp1\bin\Debug\LE\EASendMailSvcAgent40.pe
+C:\Users\labproto2\Documents\Proyecto Diseño\MotionCamera\GadgeteerApp1\bin\Debug\LE\system.web.pe
+C:\Users\labproto2\Documents\Proyecto Diseño\MotionCamera\GadgeteerApp1\bin\Debug\EASendMailSvcAgent40.dll
+C:\Users\labproto2\Documents\Proyecto Diseño\MotionCamera\GadgeteerApp1\bin\Debug\system.web.dll
